@@ -1,8 +1,132 @@
 @media screen and (max-width: 1200px) {
-  .services-box-container {
-    padding: 30px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5.3%;
-    row-gap: 10.9%;
+  .nav-menulinks {
+    display: none;
+  }
+
+  .services {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+
+  html {
+    font-size: 57%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 42%;
+  }
+
+}
+
+/* @media screen and (max-width: 830px) {
+  html {
+    font-size: 38%;
+  }
+} */
+
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 62.5%;
+  }
+  .hero-heading-container {
+    font-size: 40px;
+  }
+  .portfolio-button {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+  .section-heading {
+    font-size: 40px;
+  }
+  .services {
+    flex-basis: 80%;
+    margin: 10px 5%;
+    overflow: hidden;
+  }
+  .project {
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+  }
+  .projects-container .project:nth-child(odd){
+    flex-direction: column;
+  }
+  .project-image {
+    height: 300px;
+  }
+
+  .aboutme-container {
+    flex-direction: column-reverse;
+  }
+
+  .col-left {
+    width: 250px;
+    height: 360px;
+    padding-left: 0;
+  }
+
+  .aboutme-description {
+    align-items: center;
+  }
+  .aboutme-content {
+    text-align: center;
+  }
+  .aboutme-description .aboutme-heading {
+    font-size: 40px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    padding-top: 15px;
+  }
+  
+  .contact-container {
+    height: fit-content;
+    padding: 15px 0;
+  }
+  .contact-box{
+    margin: 15px 15%;
+    flex-direction: column;
+  }
+  .box-image {
+    height: 73px;
+  }
+  .box-description {
+    text-align: center;
+    padding-left: 0;
+  }
+  .project-visit {
+    transform: rotate(90deg);
+    top: 35px;
+    padding: 6px 25px 6px 20px;
+    bottom:auto;
+    right:-10px;
+    left:auto;
+  }
+  @keyframes slidein {
+    from {
+      margin-top: -29%;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-box{
+    margin: 15px 10%;
+    flex-direction: column;
   }
 }
