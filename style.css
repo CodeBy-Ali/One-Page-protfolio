@@ -473,6 +473,9 @@ span {
   letter-spacing: 2px;
   margin-bottom: 10px;
   position: relative;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .aboutme-subheading::after {
   content:' ';
@@ -671,13 +674,13 @@ span {
 }
 @keyframes auto-typing {
   0% {
-    left: 100%;
+    left: 4%;
   }
   90% {
-    left: 0;
+    left: 100%;
   }
   100% {
-    left: 0%;
+    left: 100%;
     
   }
 }
