@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,7 @@ body p {
 }
 a {
   text-decoration: none;
+  color: white;
 
 }
 
@@ -43,8 +45,9 @@ span {
   min-height: 8vh;
   width: 100%;
   position: fixed;
-  background-color: rgb(41, 50, 60);
+  background-color: rgba(31, 30, 30, 0.205);
   z-index: 10;
+  transition: background-color .3s ease;
 }
 
 .header-container {
@@ -73,18 +76,23 @@ span {
 .nav-menulinks ul li {
   list-style-type: none;
   display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .nav-menulinks ul li a {
   color: white;
-  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 2px;
   padding: 20px;
 }
 .nav-menulinks ul li a:hover {
   color: crimson;
 }
+
+
+/* Hamburger */
+
+
 /* Hero Section */
 
 
@@ -501,11 +509,14 @@ span {
   margin-bottom: 1rem;
   height: 100px;
   display: flex;
-  align-items: center;
-  
+  align-items: center; 
+}
+.box-image img:hover {
+  transform: scale(1.3) rotate(360deg);
 }
 .contact-box .box-image img {
   width: 73px;
+  transition: transform 1s;
 }
 .box-description {
   padding-left: 2rem;
@@ -575,6 +586,11 @@ span {
   letter-spacing: .5px;
   line-height: 25px;
 }
+
+
+
+/* Key Frames for Animation */
+
 @keyframes slidein {
   from {
     margin-left: -29%;
@@ -585,6 +601,17 @@ span {
   }
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.4)
+  }
+}
 
 
 
