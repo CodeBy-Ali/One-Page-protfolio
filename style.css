@@ -240,8 +240,17 @@ span {
   padding: 30px;
   background-size: cover;
   z-index: 1;
-  border-radius: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow .3s ease;
 }
+.services:hover {
+  box-shadow: 0 0 20px 3px rgba(128, 128, 128, 0.89);
+}
+.services:hover .service-subheading{
+  transform: scale(1.1);
+}
+
 .services::before{
   content: '';
   position:absolute;
@@ -263,6 +272,7 @@ span {
   font-size: 20px;
   font-weight: 700; 
   color: white;
+  transition: transform .3s ease;
 }
 .services p {
   font-size: 14px;
@@ -272,6 +282,7 @@ span {
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: .5px;
+  transition: transform .3s ease;
 }
 .webdesign-box {
   background-image: url("img/webdesign.avif");
@@ -442,6 +453,8 @@ span {
   height: 100%;
   border: 10px solid white;
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 .aboutme-image::before {
   content: '';
@@ -458,8 +471,8 @@ span {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: transform .3s ease;
 }
-
 
 .aboutme-description .aboutme-heading {
   font-size: 60px;
@@ -486,7 +499,7 @@ span {
   background-color: white;
   position: absolute;
   border-left: 3px solid crimson;
-  animation:auto-typing 3.5s steps(20) alternate infinite ;
+  animation:auto-typing 3s steps(20) alternate infinite ;
   font-weight: 500;
   margin: 0;
   padding: 0;
